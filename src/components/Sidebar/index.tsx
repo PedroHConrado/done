@@ -1,20 +1,23 @@
-import { TabButtonn } from "../TabButton";
+import { TabButton } from "../TabButton";
 import { Container } from "./styles";
 
 export function Sidebar() {
   return (
     <Container>
-      <header>
-        <h2>.done</h2>
-      </header>
-
+      
+      <h3>.done</h3>
+     
       <main>
-        <TabButtonn />
-       
+        <TabButton text="Overview"/>
+        <TabButton text="Stats"/>
+        <TabButton text="Projects"/>
+        <TabButton text="Chat"/>
+        <TabButton text="Calendar"/>
       </main>
 
       <footer>
-        
+        <TabButton text="Settings"/>
+        <TabButton text="Log out"/>
       </footer>
 
     </Container>
