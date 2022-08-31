@@ -1,4 +1,4 @@
-import { Bell, CaretDown, Question } from "phosphor-react";
+import { Bell, CaretDown, MagnifyingGlass, Question } from "phosphor-react";
 import { Container } from "./styles";
 
 export function Header() {
@@ -6,20 +6,24 @@ export function Header() {
   return (
     <Container>
       <div className="search">
-        <input type="text" />
+        <MagnifyingGlass size={22} className="icon-search"/>
+        <input type="text" placeholder="Search" className="input-search"/>
       </div>
 
       <div className="buttons">
         <button className="support">
-          <Question size={18}/>
+          <Question size={25} />
         </button>
+
         <button className="notification">
-          <Bell size={18}/>
+          <Bell size={25} />
         </button>
+
         <button className="config">
-          <span>Pedro Conrado</span> 
-          <CaretDown color="#999999" size={18}/>
+          <strong className="name">Pedro Conrado</strong> 
+          <CaretDown size={13} weight="bold"/>
         </button>
+
         <img className="avatar" src="https://avatars.githubusercontent.com/u/69021966?v=4" alt="Foto de perfil" />
       </div>
     </Container>
