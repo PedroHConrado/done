@@ -4,7 +4,9 @@ export const GLobalStyles = createGlobalStyle`
 
     :root {
         --grey: #EBEBEB;
-        --green: #2C9985;
+        --grey-text: #9a9a9a;
+        --green-container: #f5f9f9;
+        --green-button: #e8f1f0;
     }
 
     * {
