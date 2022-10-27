@@ -10,4 +10,13 @@ export const Container = styled.div`
   margin-top: 10rem;
 
 
+  .title {
+    margin: 0 0 2rem 3rem;
+  }
+
+  .boards {
+    display: flex;
+    gap: 2rem;
+    height: 100%;
+  }
 `
